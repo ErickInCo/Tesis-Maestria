@@ -1,0 +1,379 @@
+@charset "utf-8";
+/* CSS Document */
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	padding: 10px;
+  }
+  .grid-item {
+	padding: 20px;
+	font-size: 30px;
+	text-align: justify;
+  }
+  
+  img {
+	display: none;
+  }
+.tarjetaSombra{
+	box-shadow: 10px 10px 5px #888888;
+	background-color: lightblue;
+
+	
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+	div.fixed#derecha {
+    float: left;
+		width: 20%;
+   padding: 2%;
+    
+}
+	div.notas {
+    background-color: gray;
+		color: black;
+		
+		padding: 10px;
+		
+    
+}
+div.fixed#Main {
+	float: left;
+    width: 80%;
+	padding: 2%;
+    
+}
+	#Separador{
+		background-color:#0E0087;
+		color:#FCFCFC;
+		border-radius: 10px;
+		border:1px solid #0E0087;
+		border-color: #0E0087;
+		padding: 0px 50px 0px 50px;
+	}
+table.Gris{
+	width: 100%;
+	background-color: #6B6969;
+	color: white;
+	border: dashed #0EAF98;
+	
+}
+th.gris{
+	background-color:black;
+	color: white;
+}
+tr.r1{
+	background-color: #646464;
+	color: black;
+}
+tr.r2{
+	background-color:#9BD9E9;
+	color: black;
+}
+
+/*
+	Tarjetas de precentacion
+*/
+div#Tarjeta{
+	/*float: left;
+	left: 50px;
+	top: 50px;*/
+    width: 600px;
+	height: 350px;
+	padding: 5px;
+	background-color: antiquewhite;
+}
+div#TarjetaMain{
+	width: 800px;
+	height: 350px;
+	padding: 5px;
+	background-color: antiquewhite;
+}
+div#TImagen{
+	float: left;
+	padding: 5px 1px 2px 3px;
+	width: 25%;
+	height: 50%;
+	
+}
+div#TDatos{
+	float: left;
+	
+	padding: 5px;
+	width: 75%;
+	height: 50%;
+}
+table.Datos{
+	/*align-content:flex-start;
+	align-items:baseline;*/
+}
+td{
+	border-bottom: border:1px solid black;
+	border-color: black;
+}
+div#MasDatos{
+	padding: 5px;
+}
+
+.redondearEsquinas{
+	border-radius: 20px;
+	border:1px solid black;
+	border-color: black;
+	
+}
+.redondearImg{
+	
+	border-radius: 10%;
+	border:1px solid black;
+	/*box-shadow: 10px 10px 5px #888888;
+	/*border:1px solid black;
+	border-color: black;*/
+}
+.tamanoImg{
+	width:150px;
+	height:150px;
+}
+/*
+	Fuentes
+	
+*/
+.fHaett{
+	font: normal;
+	font-family:Haettenschweiler," sans-serif";
+	font-size: 30;
+}
+.fDejaVu{
+	font:italic;
+	font-family:DejaVu Sans," sans-serif";
+	font-size: 30;
+}
+
+/*
+	Alertas
+	
+*/
+.pading{
+	padding: 10px
+}
+.aPeligro{
+	background-color: red;
+	color: black;
+}
+.aWarning{
+	background-color: yellow;
+	color: black;
+}
+
+.aGood{
+	background-color: green;
+	color: black;
+}
+
+.aInfo{
+	background-color: blue;
+	color: black;
+}
+
+/*
+`	Botones
+*/
+.btDeshabilitado{
+	cursor: not-allowed;
+	opacity: 0.3;
+	pointer-events: none;
+	box-shadow: none;
+}
+.bt{
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	padding: 12px 17px;
+}
+/*
+	Colores Fondo
+*/
+.rojo{
+	color: white;
+	background-color: red;
+}
+.azul{
+	color: white;
+	background-color: blue;
+}
+.verde{
+	color: black;
+ 	background-color: green;
+}
+.Bonito{
+	color: black;
+ 	background-color:#008ED3;
+}
+/*
+	Barras
+*/
+.barra{
+	text-aling:center;
+	overflow:hidden;
+	padding:12px 17px;
+	position:relative;
+}
+.contenedor{
+	padding: 0.01em 16px;
+}
+.block{
+	text-aling:left;
+	display:block;
+	padding:12px 17px;
+	
+}
+.item{
+	padding: 8px 16px;
+	float: left;
+	width: auto;
+	border: none;
+	outline: none;
+	display: block;
+	
+}
+.hoberable:hover{
+	color: aqua;
+	background-color: black;
+	border: dashed #00698A;
+}
+/*
+	DropDown menu
+*/
+
+.ColorLetra{
+	color: aliceblue;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:#4B0001;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FCE234;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #FFC724}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*
+Tabla de noticias
+*/
+div.tNoticia{
+	height: 400px;
+	border: solid;
+	
+	
+}
+div.tNImagen{
+	float:left;
+	width: 20%;
+	height: 100%;
+}
+div.tNDatos{
+	float: left;
+	width: 80%;
+	height: 100%;
+	
+}
+div.tNTitulo{
+	height: 20%;
+}
+div.tNResumen{
+	height: 65%;
+}
+div.tNBoton{
+	height: 15%;
+}
+/*
+	Gradientes
+*/
+.colorR{
+	color: #590001;
+	color: #D80003;
+	color: #C52427;
+	color: #E43A3D;
+	
+}
+.colorG{
+	color: #868686;
+	color: #424242;
+	color: #212121;
+	color: #000000;
+	
+}
+#gradR {
+  background: red; /* For browsers that do not support gradients */
+
+  background: radial-gradient(circle,#E43A3D,#C52427,#D80003,#590001); /* Standard syntax */
+
+}
+#gradG {
+  background: #4A4A4A; /* For browsers that do not support gradients */
+
+  background: radial-gradient(circle,#868686,#424242,#212121,#000000); /* Standard syntax */
+
+}
+#gradIR {
+  background-image: url(../Imagenes/rojo.jpg);
+
+}
+#gradIG {
+  background-image: url(../Imagenes/girs.jpg);
+
+}
+/*Enlaces pagina tec*/
+table.enlaces{
+	width: 100%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
